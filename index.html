@@ -46,15 +46,91 @@ body {
 a {color:#2bb62b; text-decoration: underline;}
 a:hover {color:greenyellow; text-decoration: none;}
 a.photo {border: #444 1px solid; float:right; background-color: #444; margin:0 0 5px 5px;}
-a.photo:hover {border: #666 1px solid; background-color: #666}
+a.photo:hover {border: #666 1px solid; background-color: #666;}
+
+.leftcolumn {
+  float: left;
+  width: 70%;
+  padding: 1%;
+}
+.rightcolumn {
+  float: left;
+  width: 26%;
+  padding: 1%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ul {padding-left: 15px;}
+
+.skills {background-color: #333333; padding: 10px 0 10px 0; margin: 0 0 10px 0;}
+.progress-bar-container  {
+	margin-bottom: 9px;
+	
+}
+
+.progress-bar-container .nazw {
+	color: #ccc;
+	font-size: 16px;
+	margin: 5px 0 0 7%;
+	
+}
+
+.progress-bar {
+	width: 90%;
+	height: 5px;
+	margin-top: 2px;
+	margin-left: 5%;
+	border: 1px solid #111111;
+	background-color: #222222;
+	border-radius: 1px;
+	
+}
+
+.percentage {
+	display: block;
+	height: 100%;
+	border-radius: 1px;
+	animation: progress 1500ms ease-in 1;
+}
+
+.color9 {background-color: #14b1ff; box-shadow: 0 0 4px #72d0ff;}
+.color8 {background-color: #00c3dd; box-shadow: 0 0 4px #3ee9ff;}
+.color7 {background-color: #00c9b2; box-shadow: 0 0 4px #00ffe1;}
+.color6 {background-color: #00ca94; box-shadow: 0 0 3px #00ffbb;}
+.color5 {background-color: #00be52; box-shadow: 0 0 3px #00ff6e;}
+.color4 {background-color: #1ca001; box-shadow: 0 0 2px #2bff00;}
+.color3 {background-color: #5db300; box-shadow: 0 0 2px #84ff00;}
+.color2 {background-color: #91bd00; box-shadow: 0 0 2px #c3ff00;}
+.color1 {background-color: #a5ab00; box-shadow: 0 0 2px #f6ff00;}
+.color0 {background-color: #af9700; box-shadow: 0 0 1px #ffdd00;}
+
+
+/* Animating the progress bar by 
+initially starting from 0*/
+@keyframes progress {
+	from {
+		width: 0;
+	}
+}
+
+
 </style>
 
 </head> <body>
 <div style="background-color: #252525; max-width: 950px; padding: 10px; border: #444 1px solid; margin: auto;">
+	
+		
+	  
   <a href="photo.jpg" class="photo"><img src="photo2.jpg" style="width: 100px; padding: 3px;" /></a> <h1 style="color: #ddd; text-align:center;">Włodzimierz Lewoniewski</h1>
   <p>Assistant professor at the <a href="https://kie.ue.poznan.pl/en/wlodzimierz-lewoniewski/" target="_blank">Department of Information Systems</a> at the <a href="https://ue.poznan.pl/en/people/dr-wlodzimierz-lewoniewski/" target="_blank">Poznań University of Economics and Business</a>.</p>
   <p>Research areas: information quality, Wikipedia, DBpedia, Wikidata, fake news, cryptocurrencies, artificial intelligence, natural language processing.</p> 
   <p>PhD thesis &quot;<a href="http://www.wbc.poznan.pl/Content/461699/Lewoniewski_Wlodzimierz-rozprawa_doktorska.pdf" target="_blank">The method of comparing and enriching information in multilingual wikis based on the analysis of their quality</a>&quot; was defended in 2019 and recognized as <a href="https://kie.ue.poznan.pl/en/news/wlodzimierz-lewoniewski-received-phd-with-distinction/" target="_blank">distinctive</a>.</p>
+  <div class="row">
+	<div class="leftcolumn">
   <div style="display: block; width: auto;  border: 1px #aaa solid; background-color: #444;"><h2 style="text-align: center; margin: 5px;">Publications</h2></div>
 <ul>
 	<li>Lewoniewski, W. (2024). <a href="https://pressto.amu.edu.pl/index.php/b/article/view/38478/35530" rel="noopener" target="_blank">The Most Cited Scientific Information Sources in Wikipedia Articles Across Various Languages</a>. <em>Biblioteka, 27 (36), 269-294</em>. <sup style="font-weight:bold; color:orange;">New!</sup></li>
@@ -106,10 +182,135 @@ a.photo:hover {border: #666 1px solid; background-color: #666}
 	<li>Węcel K., Lewoniewski W., (2015), <a href="http://link.springer.com/chapter/10.1007/978-3-319-26762-3_27" target="_blank">Modelling the Quality of Attributes in Wikipedia Infoboxes</a>. Business Information Systems Workshops. Vol. 228. Lecture Notes in Business Information Processing. Springer International Publishing, s. 308–320. (<a href="https://www.researchgate.net/profile/Krzysztof_Wecel/publication/290929481_Modelling_the_Quality_of_Attributes_in_Wikipedia_Infoboxes/links/57d16b2608ae5f03b48a7b11.pdf">PDF</a>, <a href="http://lewoniewski.info/files/BIS2015DBpedia.pdf">Presentation</a>)</li>
 	<li>Lewoniewski W., (2015)., <a href="https://onepress.pl/ksiazki/paradygmat-zrownowazonego-rozwoju-lokalnego-i-regionalnego-we-wspolczesnej-gospodarce-barbara-borusiak-prof-kazimierz-pajak,e_2kl2.htm" target="_blank">Bitcoin w systemach pieniężnych Białorusi, Ukrainy i Rosji</a>. Paradygmat zrównoważonego rozwoju lokalnego i regionalnego we współczesnej gospodarce. CeDeWu, 2015</li>
 </ul>
-<div style="display: block; width: auto;  border: 1px #aaa solid; background-color: #444;"><h2 style="text-align: center; margin: 5px;">Online Communities</h2></div>
+
+</div>
+<div class="rightcolumn">
+
+	<div style="display: block; width: auto;  border: 1px #aaa solid; background-color: #444;"><h2 style="text-align: center; margin: 5px;">Tech. lang.</h2></div>
+    <div class="skills">
+        <div class="progress-bar-container">
+            <div class="nazw">HTML, XML + CSS</div>
+            <div class="progress-bar">
+                <span class="percentage color9" style="width: 92%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">Python</div>
+            <div class="progress-bar">
+                <span class="percentage color8" style="width: 84%;"></span>
+            </div>
+        </div>
+		
+		<div class="progress-bar-container">
+            <div class="nazw">PHP</div>
+            <div class="progress-bar">
+                <span class="percentage color7" style="width: 75%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">MySQL</div>
+            <div class="progress-bar">
+                <span class="percentage color6" style="width: 60%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">JavaScript</div>
+            <div class="progress-bar">
+                <span class="percentage color5" style="width: 50%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">Scala</div>
+            <div class="progress-bar">
+                <span class="percentage color4" style="width: 42%;"></span>
+            </div>
+        </div>
 
 
-	<ul style="column-count: 4;">
+		<div class="progress-bar-container">
+            <div class="nazw">C#</div>
+            <div class="progress-bar">
+                <span class="percentage color3" style="width: 33%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">Pascal</div>
+            <div class="progress-bar">
+                <span class="percentage color2" style="width: 28%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">VBA</div>
+            <div class="progress-bar">
+                <span class="percentage color2" style="width: 23%;"></span>
+            </div>
+        </div>
+
+	</div>	
+
+
+	<div style="display: block; width: auto;  border: 1px #aaa solid; background-color: #444;"><h2 style="text-align: center; margin: 5px;">Hobbies</h2></div>
+    <div class="skills">
+        <div class="progress-bar-container">
+            <div class="nazw">Foreign languages</div>
+            <div class="progress-bar">
+                <span class="percentage color9" style="width: 95%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Computer hardware</div>
+            <div class="progress-bar">
+                <span class="percentage color8" style="width: 82%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Sports</div>
+            <div class="progress-bar">
+                <span class="percentage color7" style="width: 72%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Video games</div>
+            <div class="progress-bar">
+                <span class="percentage color6" style="width: 60%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">Music</div>
+            <div class="progress-bar">
+                <span class="percentage color5" style="width: 55%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">Design</div>
+            <div class="progress-bar">
+                <span class="percentage color4" style="width: 42%;"></span>
+            </div>
+        </div>
+
+		<div class="progress-bar-container">
+            <div class="nazw">Philosophy</div>
+            <div class="progress-bar">
+                <span class="percentage color3" style="width: 33%;"></span>
+            </div>
+        </div>
+	</div>
+
+	<div style="display: block; width: auto;  border: 1px #aaa solid; background-color: #444;"><h2 style="text-align: center; margin: 5px;">Online Communities</h2></div>
+
+
+	<ul style="column-count: 2;">
 	<li><a href="https://www.dobreprogramy.pl/@lewoniewski" rel="noopener" target="_blank">dobreprogramy</a></li>
 	<li><a href="https://www.facebook.com/Lewoniewski.info/" rel="noopener" target="_blank">Facebook</a></li>
 	<li><a href="https://github.com/Lewoniewski" rel="noopener" target="_blank">GitHub</a></li>
@@ -123,7 +324,115 @@ a.photo:hover {border: #666 1px solid; background-color: #666}
 	<li><a href="https://twitter.com/lewoniewski" rel="noopener" target="_blank">X (Twitter)</a></li>
 	<li><a href="https://www.youtube.com/@lewoniewski" rel="noopener" target="_blank">YouTube</a></li>
 	</ul>
-	
 
+
+	<div style="display: block; width: auto;  border: 1px #aaa solid; background-color: #444;"><h2 style="text-align: center; margin: 5px;">Languages</h2></div>
+    <div class="skills">
+        <div class="progress-bar-container">
+            <div class="nazw">Polish</div>
+            <div class="progress-bar">
+                <span class="percentage color9" style="width: 95%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Russian</div>
+            <div class="progress-bar">
+                <span class="percentage color9" style="width: 92%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Belarusian</div>
+            <div class="progress-bar">
+                <span class="percentage color8" style="width: 83%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Ukrainian</div>
+            <div class="progress-bar">
+                <span class="percentage color6" style="width: 62%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">English</div>
+            <div class="progress-bar">
+                <span class="percentage color5" style="width: 53%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">German</div>
+            <div class="progress-bar">
+                <span class="percentage color2" style="width: 25%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Spanish</div>
+            <div class="progress-bar">
+                <span class="percentage color1" style="width: 16%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Italian</div>
+            <div class="progress-bar">
+                <span class="percentage color1" style="width: 10%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Portuguese</div>
+            <div class="progress-bar">
+                <span class="percentage color0" style="width: 6%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">French</div>
+            <div class="progress-bar">
+                <span class="percentage color0" style="width: 5%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Hindi</div>
+            <div class="progress-bar">
+                <span class="percentage color0" style="width: 4%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Japanese</div>
+            <div class="progress-bar">
+                <span class="percentage color0" style="width: 3%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Chinese</div>
+            <div class="progress-bar">
+                <span class="percentage color0" style="width: 2%;"></span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="nazw">Arabic</div>
+            <div class="progress-bar">
+                <span class="percentage color0" style="width: 1%;"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+</div>
 </div>
   </body> </html> 
